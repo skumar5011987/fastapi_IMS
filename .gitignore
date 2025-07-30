@@ -1,0 +1,66 @@
+# Environment files
+.env
+.env.* 
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Dependency directories
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+downloads/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing logs and cache
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# C extensions and compiled artifacts
+*.so
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.pid
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# FastAPI-specific
+instance/
+.webassets-cache
