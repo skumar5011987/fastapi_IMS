@@ -16,7 +16,7 @@ class IncidentCreate(BaseModel):
     title: str
     description: Optional[str] = None
     severity: Optional[str] = "Low"
-    reporter_id : int
+    # reporter_id : int
 
 
 class ResponseIncident(BaseModel):
