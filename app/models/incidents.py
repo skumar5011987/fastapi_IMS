@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 from datetime import datetime
 import enum
 from app.db.session import Base
-from .users import User
 
 
 class IncidentStatus(str, enum.Enum):

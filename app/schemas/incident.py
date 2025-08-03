@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
 from enum import Enum
 from datetime import datetime
@@ -16,7 +16,6 @@ class IncidentCreate(BaseModel):
     title: str
     description: Optional[str] = None
     severity: Optional[str] = "Low"
-    # reporter_id : int
 
 
 class ResponseIncident(BaseModel):
@@ -28,5 +27,7 @@ class ResponseIncident(BaseModel):
     created_at: datetime
     reported_by_id : int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
+
+class UpdateIncidentStatus(BaseModel):
+    status: IncidentStatus
